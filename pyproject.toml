@@ -9,4 +9,6 @@ dependencies = [
     "ibis-framework[duckdb,examples]>=10.8.0",
     "duckdb==1.3.2",                           # breaking change: https://github.com/ibis-project/ibis/issues/11634
     "notebook",
+    "kedro",
+    "kedro-datasets[ibis]",
 ]

@@ -1,0 +1,10 @@
+_ibis_common:
+  type: ibis.FileDataset
+  connection:
+    backend: duckdb
+
+# Adhoc tables
+penguins:
+  type: ${_ibis_common.type}
+  filepath: data/penguins.parquet
+  connection: ${_ibis_common.connection}
