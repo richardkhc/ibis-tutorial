@@ -6,4 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "ibis>=3.3.0",
+    "ibis-framework[duckdb,examples]>=10.8.0",
+    "duckdb==1.3.2",                           # breaking change: https://github.com/ibis-project/ibis/issues/11634
+    "notebook",
 ]
